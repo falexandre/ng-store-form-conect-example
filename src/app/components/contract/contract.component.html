@@ -1,0 +1,11 @@
+<div [formGroup]="form" [connectForm]="actionForm">
+  <p style="text-align: center" >
+    <label>Admissão</label>
+    <input type="date" formControlName="hireDate" > <br>
+    <span *ngIf="form.get('hireDate').errors && form.get('hireDate').dirty" class="error" >Errooo</span>
+  </p>
+  <p>
+    <label>Matrícula</label>
+    <input type="number" formControlName="registernumber">
+  </p>
+</div>
