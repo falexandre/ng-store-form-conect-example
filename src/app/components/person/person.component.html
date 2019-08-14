@@ -1,0 +1,11 @@
+<div [formGroup]="form" [connectForm]="actionForm">
+  <p>
+    <label>Nome</label>
+    <input type="text" formControlName="name" > <br />
+    <span *ngIf="form.get('name').errors && form.get('name').dirty" class="error" >Errooo</span>
+  </p>
+  <p>
+    <label>E-mail</label>
+    <input type="text" formControlName="email">
+  </p>
+</div>
