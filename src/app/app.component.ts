@@ -3,6 +3,7 @@ import { Store } from '@ngrx/store';
 import { FormBuilder } from '@angular/forms';
 import { PersonComponent } from './components/person/person.component';
 import { ContractComponent } from './components/contract/contract.component';
+import './custom-elements/seniorAutocomplete';
 
 @Component({
   selector: 'app-root',

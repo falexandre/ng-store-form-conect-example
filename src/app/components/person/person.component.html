@@ -6,6 +6,8 @@
   </p>
   <p>
     <label>E-mail</label>
-    <input type="text" formControlName="email">
+    <senior-autocomplete type="text" elementFormControlName="email" value="Blumenau" ></senior-autocomplete>
+    <br>
+    <span *ngIf="form.get('email').errors && form.get('email').dirty" class="error" >Errooo</span>
   </p>
 </div>

@@ -11,7 +11,7 @@ export class PersonComponent implements OnInit {
 
   public form = this.formBuilder.group({
     name: [undefined, Validators.required],
-    email: [undefined],
+    email: ['Blumenau', Validators.required],
   });
 
   public actionForm = AdmissionActionUpdateForm;
